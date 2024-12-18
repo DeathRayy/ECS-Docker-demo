@@ -12,4 +12,9 @@ public class MainController {
     public ResponseEntity<String> wishController(){
         return ResponseEntity.ok("Welcome User");
     }
+
+    @GetMapping(value="/bye")
+    public ResponseEntity<String> goodBye(){
+        return ResponseEntity.ok("Good bye User");
+    }
 }
